@@ -19,4 +19,15 @@ context('Funcionalidade Login', () =>{
     cy.get('#mui-17').click().select('[class="MuiMenuItem-root MuiMenuItem-gutters MuiButtonBase-root css-1x7oc0z"]')
 
     });
+    it.only('Cadastrar Veículo', () => {
+        cy.get('[class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ag30nc"]').click()
+        cy.get('[href="/vehicles"]').click()
+        cy.get('[data-cy="entityCreateButton"]').click()
+        cy.get('#vehicle-licensePlate').type('dsfdsfdsf')
+        cy.get('#vehicle-chassis').type('ajdnfiuwenf')
+        cy.get('#vehicle-renavam').type('kdfnisdnfik')
+        cy.get('#mui-17').click().select('[class="MuiMenuItem-root MuiMenuItem-gutters MuiButtonBase-root css-1x7oc0z"]')
+    
+        });
+    
 })
