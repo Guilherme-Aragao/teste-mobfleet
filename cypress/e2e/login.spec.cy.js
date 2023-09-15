@@ -6,7 +6,7 @@ beforeEach(() => {
 
 context('Funcionalidade Login', () =>{
 
-    it.only('Deve fazer login com sucesso', () => {
+    it('Deve fazer login com sucesso', () => {
         cy.get('#mui-1').type('administrador@4code.dev')
         cy.get('#mui-2').type('Default2012*')
         cy.get('[data-cy="submit"]').click()
